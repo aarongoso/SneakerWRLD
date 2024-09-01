@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="utf-8">
+    <title>Giftcard | SneakerWRLD</title>
+  </head>
+  <body class="gift">
+
+
+  <!-- navigation bar -->
+<nav class="navbar">
+  <ul>
+    <img src="SneakerWRLD .png" width="60px" />
+    <li><a class="nav-links" href="index.html">HOME</a></li>
+    <li><a class="nav-links" href="sneaker.html">VIEW SNEAKERS</a></li>
+      <li><a class="nav-links" href="SneakerWRLD.html">SEARCH SNEAKERS</a></li>
+        <li><a class="nav-links" href="information.html">INFORMATION</a></li>
+    <li><a class="nav-links" href="giftcard.html">GIFTCARD</a></li>
+    <li><a class="nav-links" href="order.html">ORDER</a></li>
+  </ul>
+</nav>
+
+<!-- form section -->
+<div class="container2">
+
+  <form onsubmit="checkDiscount()" action="sold.html">
+
+    <table>
+
+      <tr class="row">
+        <td class="col-25">
+          <label for="username">Username:</label>
+        </td>
+        <td class="col-75">
+          <input type="text" id="username" name="username" required
+            placeholder="Enter your username">
+        </td>
+      <tr>
+
+        <tr class="row">
+          <td class="col-25">
+            <label for="password">Password:</label>
+          </td>
+          <td class="col-75">
+            <input type="password" id="password" name="password" minlength="9" maxlength="9" required
+              placeholder="9 characters required">
+          </td>
+        <tr>
+            
+         <tr class="row">
+        <td class="col-25">
+          <label for="message">Personalised message:</label>
+        </td>
+        <td class="col-75">
+          <input type="text" id="message" name="message"
+            placeholder="Enter your personalised message">
+        </td>
+      <tr>
+
+        <tr class="row">
+          <td class="col-25">
+            <label for="sneaker-type">Giftcard value:</label>
+          </td>
+          <td class="col-75">
+            <select id="giftcard-type" name="giftcard-type" onchange="checkPrice(this)">
+              <option value="ten">€10.00</option>
+              <option value="twenty">€20.00</option>
+              <option value="thirty">€30.00</option>
+              <option value="fourthy">€40.00</option>
+              <option value="fifthy">€50.00</option>
+              <option value="sevnety5">€75.00</option>
+              <option value="hundo">€100.00</option>
+              <option value="hundo25">€125.00</option>
+              <option value="onefifthy">€150.00</option>
+            </tr>
+
+      <tr class="row">
+        <td class="col-25">
+          <label for="num-sneakers">Quantity:</label>
+        </td>
+        <td class="col-75">
+          <input type="number" id="num-sneakers" name="num-sneakers" min="1" required>
+        </td>
+      <tr>
+ 
+      <tr class="row">
+        <td class="col-25">
+          &nbsp;
+        </td>
+        <td class="col-75">
+          <input type="submit" value="Submit">
+        </td>
+      <tr>
+
+    </table>
+
+  </form>
+
+</div>
+
+<script>
+
+<!-- function to warn about the dearest price -->
+function checkPrice($this) {
+  if($this.value == "onefifthy") {
+    alert("Simple reminder this giftcard is €150.00, press ok to acknowledge price");
+  }
+}
+
+</script>
+
+<footer>
+    <div class="copy">
+        <p>&copy; 2023 SneakerWRLD</p>
+    </div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="SneakerWRLD.xsl"?>
+<?xml-model href="SneakerWRLD.xsd"?>
+
+
+<product>
+<sneaker id="100-000">
+<name>Jordan 1 Red</name>
+<brand>Air Jordan</brand>
+<description>Classic Red Jordan 1's, the face of SneakerWRLD</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€160.00</price>
+</sneaker>
+
+<sneaker id="100-001">
+<name>Jordan 1 Travis Scott</name>
+<brand>Air Jordan</brand>
+<description>Travis Scott collabed Jordan 1's, cactus jack style</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€155.00</price>
+</sneaker>
+
+<sneaker id="100-002">
+<name>Jordan 1 Blue</name>
+<brand>Air Jordan</brand>
+<description>Blue Jordan 1's, the reverse style to the red's, it's bold</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€145.00</price>
+</sneaker>
+
+<sneaker id="120-003">
+<name>Jordan 4 BlackCat</name>
+<brand>Air Jordan</brand>
+<description>Jordan 4 BlackCat's, the blackout J's stealthy like a black cat</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€130.00</price>
+</sneaker>
+
+<sneaker id="120-004">
+<name>Jordan 4 Bled</name>
+<brand>Air Jordan</brand>
+<description>Jordan 4 Bled's, mainly black with a hint of red and grey, it's that simple</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€125.00</price>
+</sneaker>
+ 
+<sneaker id="120-005">
+<name>Jordan 4 Grey</name>
+<brand>Air Jordan</brand>
+<description>Jordan 4 grey's, all grey all day</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€135.00</price>
+</sneaker>
+ 
+<sneaker id="123-006">
+<name>Yeezy Oreo</name>
+<brand>Adidas Yeezy</brand>
+<description>Yeezy Oreo's, black Yeezy's with a stripe of cream oreo style</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€145.50</price>
+</sneaker>
+
+<sneaker id="123-007">
+<name>Yeezy Beluga</name>
+<brand>Adidas Yeezy</brand>
+<description>Yeezy Beluga's, grey like the whale they're named after</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€140.50</price>
+</sneaker>
+ 
+<sneaker id="123-408">
+<name>Jordan 11 Grey</name>
+<brand>Air Jordan</brand>
+<description>Jordan 11 Grey's, sleek and stylsih</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€120.00</price>
+</sneaker>
+ 
+<sneaker id="123-459">
+<name>Airmax 97 JDW</name> 
+<brand>Nike Airmax</brand>
+<description>The Airmax 97 Sean Wotherspoon's, yellow, pink, blue and black all in one</description>
+<sizes>5 Available</sizes>
+<quantity>20 pairs</quantity>
+<price>€145.50</price>
+</sneaker>
+
+</product>

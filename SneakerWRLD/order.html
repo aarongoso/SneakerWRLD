@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>Order | SneakerWRLD</title>
+
+		<!-- links to favicon and stylesheet (css) -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="style.css"/>
+
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body class="order">
+
+		<!-- navigation bar -->
+  <nav class="navbar">
+    <ul>
+      <img src="SneakerWRLD .png" width="60px" />
+      <li><a class="nav-links" href="index.html">HOME</a></li>
+     <li><a class="nav-links" href="sneaker.html">VIEW SNEAKERS</a></li>
+      <li><a class="nav-links" href="SneakerWRLD.html">SEARCH SNEAKERS</a></li>
+          <li><a class="nav-links" href="information.html">INFORMATION</a></li>
+      <li><a class="nav-links" href="giftcard.html">GIFTCARD</a></li>
+      <li><a class="nav-links" href="order.html">ORDER</a></li>
+    </ul>
+  </nav>
+
+<div>
+
+		<!-- form section -->
+		<div class="container">
+
+			<form onsubmit="checkDiscount()" action="sold.html">
+
+				<table>
+
+					<tr class="row">
+						<td class="col-25">
+							<label for="username">Username:</label>
+						</td>
+						<td class="col-75">
+							<input type="text" id="username" name="username" required
+								placeholder="Enter your username">
+						</td>
+					<tr>
+
+					<tr class="row">
+						<td class="col-25">
+							<label for="password">Password:</label>
+						</td>
+						<td class="col-75">
+							<input type="password" id="password" name="password" minlength="9" maxlength="9" required
+								placeholder="9 characters required">
+						</td>
+					<tr>
+
+						<tr class="row">
+							<td class="col-25">
+								<label for="sneaker-type">Sneaker type:</label>
+							</td>
+							<td class="col-75">
+								<select id="sneaker-type" name="sneaker-type" onchange="checkSize(this)">
+									<option value="J1R">Jordan 1 Red - €160.00</option>
+									<option value="J1T">Jordan 1 Trav - €155.00</option>
+                                                                        <option value="J1B">Jordan 1 Blue - €145.00</option>
+									<option value="J4B">Jordan 4 Black - €130.00</option>
+									<option value="J4BL">Jordan 4 Bled - €125.00</option>
+									<option value="J4G">Jordan 4 Grey - €135.00</option>
+									<option value="YO">Yeezy Oreo - €145.50</option>
+									<option value="YB">Yeezy Beluga - €140.50</option>
+									<option value="J11G">Jordan 11 Grey - €120.00</option>
+									<option value="A97">Airmax 97 JDW - €145.50</option>
+
+					<tr class="row">
+						<td class="col-25">
+							<label for="sneaker-size">Sneaker size:</label>
+						</td>
+						<td class="col-75">
+							<select id="sneaker-size" name="sneaker-size" onchange="checkSize(this)">
+								<option value="uk6">UK6 EU40 </option>
+								<option value="uk7">UK7 EU41 </option>
+								<option value="uk8">UK8 EU42 </option>
+								<option value="uk9">UK9 EU43 </option>
+								<option value="uk10">UK10 EU44 </option>
+
+							</select>
+						</td>
+					<tr>
+
+					<tr class="row">
+						<td class="col-25">
+							<label for="num-sneakers">Pairs of sneakers:</label>
+						</td>
+						<td class="col-75">
+							<input type="number" id="num-sneakers" name="num-sneakers" min="1" required>
+						</td>
+					<tr>
+
+					<tr class="row">
+						<td class="col-25">
+							<label for="disc-code">Discount code or giftcard:</label>
+						</td>
+						<td class="col-75">
+							<input type="text" id="disc-code" name="disc-code">
+						</td>
+					<tr>
+
+					<tr class="row">
+						<td class="col-25">
+							&nbsp;
+						</td>
+						<td class="col-75">
+							<input type="submit" value="Submit">
+						</td>
+					<tr>
+
+				</table>
+
+			</form>
+
+		</div>
+
+		<script>
+
+			<!-- function to show shoe is sold out -->
+			function checkSize($this) {
+				if($this.value == "uk8") {
+					alert("Sold Out! Unfortunatly were sold out in this shoe in size UK8 EU42. Please check back later to see availability");
+				}
+			}
+
+			<!-- function to check discount code -->
+			function checkDiscount() {
+				var text1 = document.getElementById("disc-code").value;
+
+				if (text1 == "sneakerHead") {
+					alert("10% discount applied");
+				}
+				else {
+					alert("Invalid code entered");
+				}
+			}
+
+		</script>
+
+
+
+
+		<footer>
+	      <div class="copy">
+	          <p>&copy; 2023 SneakerWRLD</p>
+	      </div>
+	  </footer>
+
+	</body>
+
+</html>
+

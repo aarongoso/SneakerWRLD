@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+
+		<title>SneakerWRLD</title>
+
+		<!-- links to favicon and stylesheet (css) -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico">
+		<link rel="stylesheet" href="style.css"/>
+
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!--[if lt IE 9]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<!-- navigation bar -->
+		<nav class="navbar">
+	    <ul>
+	      <img src="SneakerWRLD .png" width="60px" />
+	      <li><a class="nav-links" href="index.html">HOME</a></li>
+	     <li><a class="nav-links" href="sneaker.html">VIEW SNEAKERS</a></li>
+      <li><a class="nav-links" href="SneakerWRLD.html">SEARCH SNEAKERS</a></li>
+	          <li><a class="nav-links" href="information.html">INFORMATION</a></li>
+	      <li><a class="nav-links" href="giftcard.html">GIFTCARD</a></li>
+	      <li><a class="nav-links" href="order.html">ORDER</a></li>
+	    </ul>
+	  </nav>
+
+		<div id="order-success">
+			<img src="sneakerWRLD .png" alt="Order Successful"/>
+			<h5>Thank you!</h5>
+			<button class="category" onclick="displayOrderNumber()">Reveal Order Number</button>
+			<p id="orderMessage"></p>
+
+			<script>
+			// Function to generate a random order number
+			function generateRandomOrderNumber() {
+					// Generate a random number between 1000 and 9999
+					const orderNumber = Math.floor(Math.random() * 9000) + 1000;
+					return orderNumber;
+			}
+
+
+			// Function to display the "thank you" message with the order number
+			function displayOrderNumber() {
+					const orderNumber = generateRandomOrderNumber();
+					const message = "Your order number is " + "#" + orderNumber + " ,your order is being prepared and will be delivered soon!";
+					document.getElementById("orderMessage").textContent = message;
+			}
+			</script>
+		</div>
+
+
+	</body>
+
+</html>
+
